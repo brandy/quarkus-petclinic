@@ -17,7 +17,11 @@ import io.quarkus.qute.TemplateInstance;
 
 @ApplicationScoped
 public class TemplatesLocale {
-    
+
+    public TemplateInstance authLogin() {
+        return Templates.authLogin().setAttribute("locale", getConfiguredLocale());
+    }
+
     public TemplateInstance welcome() {
         return Templates.welcome().setAttribute("locale", getConfiguredLocale());
     }

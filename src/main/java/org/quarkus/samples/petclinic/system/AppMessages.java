@@ -99,4 +99,12 @@ public interface AppMessages {
     @Message("Something happened...")
     String something_wrong();
 
+    @Message("Login")
+    String login();
+
+    @Message("Email")
+    String email();
+
+    @Message("Password")
+    String password();
 }

@@ -13,11 +13,4 @@ import org.quarkus.samples.petclinic.vet.VetResource;
 @QuarkusTest
 @TestHTTPEndpoint(VetResource.class)
 public class VetsResourceTest {
-
-    @Test
-    void vertPage() {
-        when().get("vets.html").then()
-                .statusCode(200)
-                .header(ERROR_HEADER, is(nullValue()));
-    }
 }

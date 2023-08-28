@@ -15,6 +15,8 @@ import io.quarkus.qute.TemplateInstance;
 
 @CheckedTemplate
 public class Templates {
+    public static native TemplateInstance authLogin();
+
     public static native TemplateInstance welcome();
 
     public static native TemplateInstance error(String message);
